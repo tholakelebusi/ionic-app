@@ -1,0 +1,38 @@
+.login-box
+{
+  padding: 20px 20px 0px 20px;
+  margin-top: 120px;
+  margin-left: 120px;
+  margin-right: 520px;
+  
+  background-color:transparent;
+}
+.btn{
+  background-color:rgb(204, 175, 12);
+  color: blue;
+  font-weight: bolder;
+  
+}
+ion-icon
+{
+  color:blue;
+  font-size: 35px;
+  font-weight: bolder;
+ background-color: transparent;
+}
+ion-icon
+{
+  color:rgb(204, 175, 12);
+  font-size: 35px;
+  font-weight: bolder;
+ background-color: transparent;
+}
+.c1
+{
+  margin-left: 4cm;
+
+}
+.labelss
+{
+  margin-left: 1cm;
+}

@@ -1,0 +1,49 @@
+<ion-header>
+<p>
+Registration page
+</p>
+</ion-header>
+
+<ion-content>
+  <form>
+    <div class="login-box">
+<ion-item lines="full">
+<ion-label position="floating">First name</ion-label>
+<ion-input type="text" required></ion-input>
+</ion-item>
+
+
+
+<ion-item lines="full">
+<ion-label position="floating">Email</ion-label>
+<ion-input type="text" required></ion-input>
+</ion-item>
+
+<ion-item lines="full">
+<ion-label position="floating">Password</ion-label>
+<ion-input type="text" required></ion-input>
+</ion-item>
+
+<ion-row>
+  <ion-col>
+    <ion-button type="submit" color="danger">Sign Up</ion-button>
+  </ion-col>
+</ion-row>
+
+
+
+<ion-row>
+  <ion-col>
+    <a [routerLink]="['']" class="small-text">Already a user?</a>
+  </ion-col>
+</ion-row>
+
+    </div>
+  </form>
+</ion-content>
+ <ion-footer>
+    <ion-toolbar>
+<ion-icon class="c1"[routerLink]="['/']" name="person"></ion-icon>
+    <ion-icon class="c1" [routerLink]="['/']" name="home"></ion-icon>
+    </ion-toolbar>
+  </ion-footer>

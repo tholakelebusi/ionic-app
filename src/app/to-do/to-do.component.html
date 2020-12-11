@@ -1,0 +1,137 @@
+
+<ion-header>
+
+    <ion-title>
+To-do List    
+    </ion-title>
+
+</ion-header>
+
+  
+
+<ion-content padding>
+
+
+<div class="login-bo">
+ 
+ <ion-card *ngIf="showAddlistcard">
+   <ion-card-title>Add new task</ion-card-title>
+   
+   <ion-item >
+  <ion-input disabled type="number" [(ngModel)]="taskid"></ion-input>
+</ion-item>
+<ion-item lines="full">
+   <ion-label class="cnt">Content</ion-label>
+  <ion-input  type="text" [(ngModel)]="content" required></ion-input>
+</ion-item>
+
+<ion-item lines="full">
+ <ion-label>Status</ion-label>
+ <select [(ngModel)]="status">
+  <option>Complete </option>
+    <option>To Do</option>
+    <option>Doing</option>
+</select>
+</ion-item>
+<ion-item lines="full">
+    <ion-label >Priority</ion-label>
+  <select [(ngModel)]="priority">
+  <option>A</option>
+    <option>B</option>
+    <option>C</option>
+     <option>D</option>
+      <option>E</option>
+       <option>F</option>
+</select>
+</ion-item>
+   
+      <ion-button color="yellow" (click)="add()" >Add Task</ion-button>    
+ </ion-card>
+</div>
+
+
+<div class="tables">
+
+<ion-item >
+<table >
+  <thead>
+
+   
+<th>Contents</th>
+<th>Status</th>
+<th>Priority</th>
+
+
+
+    <tr *ngFor="let todo of Todolist; let i=index">
+    <td>{{todo.contents}}</td>
+   <td>{{todo.statuss}}</td>
+      <td>{{todo.prioritys}}</td>
+       <button ion-button clear (click)="btn_updateTasks(i)"><ion-icon name="create"></ion-icon></button>
+    <button ion-button clear (click)="deleteTasks(i)" color="danger"><ion-icon name="trash"></ion-icon></button>
+</tr>
+
+   
+
+
+</thead>
+</table>
+</ion-item>
+</div>
+
+
+
+
+<ion-card *ngIf="showeditlistcard">
+
+  <ion-card-title>Edit Task</ion-card-title>
+
+ <ion-item lines="full">
+  <ion-label class="cnt">Content</ion-label>
+  <ion-input  type="text" [(ngModel)]="content" required></ion-input>
+</ion-item>
+
+<ion-item lines="full">
+ <ion-label>Status</ion-label>
+ <select [(ngModel)]="status">
+  <option>Complete </option>
+    <option>To Do</option>
+    <option>Doing</option>
+</select>
+</ion-item>
+<ion-item lines="full">
+    <ion-label >Priority</ion-label>
+  <select [(ngModel)]="priority">
+  <option>A</option>
+    <option>B</option>
+    <option>C</option>
+     <option>D</option>
+      <option>E</option>
+       <option>F</option>
+</select>
+
+</ion-item>
+<ion-button color="yellow" (click)="updateTasks()">Edit</ion-button>
+<ion-button color="green" (click)="cauncellistedit()">Cancel</ion-button>
+</ion-card>
+ 
+  </ion-content>
+
+  <ion-footer>
+  
+      
+
+        
+       <ion-icon class="c1" name="home" [routerLink]="['/']" ></ion-icon>
+       <ion-icon class="c2"[routerLink]="['/list']" name="list"></ion-icon>
+ 
+      
+  </ion-footer>
+     
+ 
+
+
+
+
+
+

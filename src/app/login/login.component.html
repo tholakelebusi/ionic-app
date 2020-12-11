@@ -1,0 +1,57 @@
+<ion-header>
+<p>Login page</p>
+</ion-header>
+
+<ion-content class="login-content" padding>
+  <form>
+<div class="login-box">
+
+<ion-item lines="full">
+  <ion-label position="floating">Email</ion-label>
+  <ion-input type="text" required></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Password</ion-label>
+   <ion-input type="text" required></ion-input>
+   </ion-item>
+ 
+
+<ion-row>
+  <ion-col>
+    <ion-button type="submit" color="yellow" expand="block" class="btn">Log In</ion-button>
+  <ion-button [routerLink]="['/register']" type="submit" expand="block">Register</ion-button>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col>
+  
+  <ion-button [routerLink]="['/list']" type="submit" expand="block" color="link" class="btn">TO DO LIST</ion-button>
+  </ion-col>
+</ion-row>
+
+</div>
+  </form>
+  
+</ion-content>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title>
+  
+      </ion-title>
+     <ion-icon class="c1" [routerLink]="['/']" name="home"></ion-icon>
+<ion-icon class="c1" [routerLink]="['/list']" name="list"></ion-icon>
+    
+<ion-icon class="c1"[routerLink]="['/register']" name="person-add-outline"></ion-icon>
+
+
+</ion-toolbar>
+  </ion-footer>
+     
+
+
+
+
+

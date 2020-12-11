@@ -1,0 +1,22 @@
+.login-box
+{
+  padding: 20px 20px 0px 20px;
+  margin-top: 90px;
+  margin-left: 120px;
+  margin-right: 520px;
+  
+  border: 20px;
+  background-color:whitesmoke;
+}
+ion-icon
+{
+  color:rgb(204, 175, 12);
+  font-size: 35px;
+  font-weight: bolder;
+ background-color: transparent;
+}
+.c1
+{
+  margin-left: 4cm;
+
+}
